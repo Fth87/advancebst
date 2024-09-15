@@ -24,9 +24,9 @@ function App() {
     return student.active;
   });
 
-  const showAlert = (message) => {
-    alert(message);
-  };
+  // const showAlert = (message) => {
+  //   alert(message);
+  // };
 
   //merubah sesuatu berdasarkan keadaan tertentu di function
 
@@ -45,6 +45,7 @@ function App() {
 
   useEffect(() => {
     setActiveStudent(students[idStudent]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idStudent]);
 
   return (
